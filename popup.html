@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8" />
+	<title>WPForms Chrome Extension</title>
+	<link rel="stylesheet" href="popup.css" />
+	<meta name="author" content="Mahdi Yazdani" />
+</head>
+
+<body>
+
+	<div id="wpforms-sanity-check" class="tabcontent">
+		<ul id="wpforms-sanity-check-list"></ul>
+		<hr />
+		<form id="wpforms-sanity-check-extension" autocomplete="off">
+			<fieldset>
+				<legend>Add items that require sanity check</legend>
+
+				<input id="task" name="task" placeholder="Add to the checklist" required></input>
+			</fieldset>
+			<input type="submit" value="Add to list +" form="wpforms-sanity-check-extension" />
+		</form>
+	</div>
+	<script src="popup.js"></script>
+</body>
+
+</html>
